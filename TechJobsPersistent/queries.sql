@@ -1,6 +1,6 @@
 --Part 1
-
+--SELECT column_name,data_type FROM information_schema.columns WHERE table_schema = 'techjobs' and table_name = 'jobs';
 --Part 2
-
+--SELECT jobs.Name FROM jobs INNERJOIN employers ON employers.Id = jobs.employerId WHERE employers.Location = "St. Louis City";
 --Part 3
-
+--SELECT jobs.Name, skills.Name FROM jobs JOIN jobskills ON jobs.Id = jobskills.JobId JOIN skills ON jobskills.SkillId = skills.Id ASC;
